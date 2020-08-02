@@ -10,7 +10,6 @@
   align-items: center;
 }
 .header__text{
-  font-family: 'Roboto-Regular';
   margin-left: auto;
   margin-right: 50px;
   span{
@@ -70,13 +69,11 @@
   &-title{
     margin-bottom: 10px;
     font-size: 48px;
-    font-family: 'Roboto-Bold';
     line-height: 72px;
   }
   &-text{
     margin-bottom: 50px;
     font-size: 20px;
-    font-family: 'Roboto-Medium';
     line-height: 30px;
   }
   &-form{
@@ -240,6 +237,82 @@
   }
 }
 
-
-
 // end product-slider
+// advantages
+.advantages{
+  background-color: $bg;
+  padding: 110px 0px;
+}
+.advantages__title{
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.advantages__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__item{
+  max-width: 370px;
+  text-align: center;
+  padding: 0px 15px; 
+  &:hover{
+    .advantages__item-image{
+      background-color: $green;
+      transition: all .5s;
+      svg{
+        color: #fff;
+      }
+    }
+    .advantages__item-title{
+      color: $green;
+      transition: all .3s;
+    }
+    .advantages__item-image{
+      path{
+        fill:#fff 
+        // fill  в svg изменяет цвет!
+      }
+    }
+  }
+  &-image{
+    width: 114px;
+    height: 114px;
+    background-color:#fff;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title{
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    // шрифт
+  }
+  &-subtitle{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+} 
+.icosvg-1{
+  svg{
+    width: 50px;
+  }
+}
+.icosvg-2{
+  svg{
+    width: 70px;
+  }
+}
+.icosvg-3{
+  svg{
+    width: 86px;
+  }
+}
+

@@ -1,54 +1,54 @@
-@import 'vars';
-@import 'global';
-@import 'fonts';
+@import "vars";
+@import "global";
+@import "fonts";
 
 // start header
-.header__top-inner{
+.header__top-inner {
   display: flex;
   justify-content: space-between;
   height: 90px;
   align-items: center;
 }
-.header__text{
+.header__text {
   margin-left: auto;
   margin-right: 50px;
-  span{
+  span {
     color: $red;
   }
 }
-.header__btn{
- padding: 4px;
- width: 72px;
- text-align: center;
- color: #fff;
- border-radius:4px ;
- font-size: 12px;
+.header__btn {
+  padding: 4px;
+  width: 72px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
 }
-.header__btn-login{
+.header__btn-login {
   background-color: $green;
 }
-.header__btn-registered{
+.header__btn-registered {
   background-color: $red;
   margin-left: 7px;
 }
-.header__menu{
-  background-color:$bg;
+.header__menu {
+  background-color: $bg;
   height: 60px;
 }
-.menu{
+.menu {
   display: flex;
   align-items: center;
   height: 60px;
-
 }
-.menu__list{
-  li{
+.menu__list {
+  li {
     display: inline-block;
-    & + li{
+    & + li {
       margin-left: 30px;
     }
-    a{
+    a {
       font-size: 14px;
+      font-family: 400px;
       color: #fff;
     }
   }
@@ -56,35 +56,35 @@
 
 // end header
 // start search
-.search{
+.search {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   min-height: 533px;
 }
-.search__inner{
+.search__inner {
   padding: 155px 0px 100px;
-  color:#fff;
+  color: #fff;
   text-align: center;
-  &-title{
+  &-title {
     margin-bottom: 10px;
     font-size: 48px;
     line-height: 72px;
   }
-  &-text{
+  &-text {
     margin-bottom: 50px;
     font-size: 20px;
     line-height: 30px;
   }
-  &-form{
+  &-form {
     width: 670px;
     margin: 0 auto;
     position: relative;
-    input{
+    input {
       display: block;
       width: 100%;
       border-radius: 4px;
-      box-shadow: 0.5px 0.866px 10px 0px rgba(124, 178, 64, 0.75);  
+      box-shadow: 0.5px 0.866px 10px 0px rgba(124, 178, 64, 0.75);
       height: 56px;
       border: 0;
       font-size: 14px;
@@ -95,15 +95,15 @@
       //   &:focus{
       //   border:1px solid green;
       // }
-      &::placeholder{
+      &::placeholder {
         color: #90a4ae;
         font-weight: 500;
       }
     }
-    button{
+    button {
       position: absolute;
       border: none;
-      background-color: bg;
+      background-color: transparent;
       top: 16px;
       right: 20px;
       outline: none;
@@ -112,14 +112,14 @@
 }
 // end search
 // start products
-.products{
- padding: 110px 0px;
- background-color: $grey;
+.products {
+  padding: 110px 0px;
+  background-color: $grey;
 }
-.products__inner-btn{
+.products__inner-btn {
   text-align: center;
   margin-bottom: 60px;
-  button{
+  button {
     font-size: 14px;
     font-weight: 400;
     padding: 12px 21px;
@@ -128,102 +128,102 @@
     background-color: #fff;
     cursor: pointer;
     outline: none;
-    & + button{
+    & + button {
       margin-left: 5px;
     }
   }
 }
-.products__inner-box{
+.products__inner-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.product__item{
+.product__item {
   max-width: 440px;
   width: 100%;
   box-shadow: 0.5px 0.866px 2px 0px rgba(205, 214, 222, 0.75);
   margin-bottom: 30px;
-  &-img{
-  min-height: 250px;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  &-img {
+    min-height: 250px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
-  &-content{
+  &-content {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
     min-height: 90px;
     font-weight: 500;
     border-bottom: 1px solid #e7ecf2;
   }
-  &-title{
+  &-title {
     display: block;
     color: $bg;
     font-size: 18px;
   }
-  &-category{
+  &-category {
     display: block;
     font-size: 14px;
     color: $green;
   }
-  &-price{
+  &-price {
     font-size: 20px;
     color: $bg;
     font-weight: 700;
   }
-  &-info{
+  &-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
     padding: 10px 30px;
   }
-  &-auhtor{
+  &-auhtor {
     display: flex;
     align-items: center;
     max-width: 245px;
-    .avatar{
+    .avatar {
       width: 30px;
       height: 30px;
-      border-radius: 50%; 
+      border-radius: 50%;
       background-position: center;
       display: inline-block;
       background-repeat: no-repeat;
       background-size: cover;
       margin-right: 15px;
     }
-    span{
+    span {
       font-size: 14px;
       font-weight: 500;
     }
   }
-  &-star{
+  &-star {
     font-size: 12px;
-    span{
+    span {
       color: $bg;
     }
   }
 }
 // end products
 // start product-slider
-.product-slider{
+.product-slider {
   padding: 110px 0px 120px;
-  .slick-dots{
+  .slick-dots {
     text-align: center;
     margin-top: 50px;
-    li{
-       display: inline-block;
-       margin-left: 3px;
-       margin-right: 3px;
-       &.slick-active{
-         button{
-           background-color: $green;
-         }
-       }
-       button{
+    li {
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px;
+      &.slick-active {
+        button {
+          background-color: $green;
+        }
+      }
+      button {
         border-radius: 50%;
         background-color: rgb(232, 232, 232);
         border: none;
@@ -232,87 +232,331 @@
         height: 16px;
         cursor: pointer;
         outline: none;
-       }
+      }
     }
   }
 }
 
 // end product-slider
 // advantages
-.advantages{
+.advantages {
   background-color: $bg;
   padding: 110px 0px;
 }
-.advantages__title{
+.advantages__title {
   color: #fff;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 85px;
   text-align: center;
 }
-.advantages__inner{
+.advantages__inner {
   display: flex;
   justify-content: space-between;
 }
-.advantages__item{
+.advantages__item {
   max-width: 370px;
   text-align: center;
-  padding: 0px 15px; 
-  &:hover{
-    .advantages__item-image{
+  padding: 0px 15px;
+  &:hover {
+    .advantages__item-image {
       background-color: $green;
-      transition: all .5s;
-      svg{
+      transition: all 0.5s;
+      svg {
         color: #fff;
       }
     }
-    .advantages__item-title{
+    .advantages__item-title {
       color: $green;
-      transition: all .3s;
+      transition: all 0.3s;
     }
-    .advantages__item-image{
-      path{
-        fill:#fff 
+    .advantages__item-image {
+      path {
+        fill: #fff;
         // fill  в svg изменяет цвет!
       }
     }
   }
-  &-image{
+  &-image {
     width: 114px;
     height: 114px;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 50%;
     margin: 0 auto 30px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  &-title{
+  &-title {
     margin-bottom: 25px;
     color: #fff;
     font-size: 24px;
     font-weight: 500;
     // шрифт
   }
-  &-subtitle{
+  &-subtitle {
     font-size: 15px;
     line-height: 24px;
     font-weight: 700;
   }
-} 
-.icosvg-1{
-  svg{
+}
+.icosvg-1 {
+  svg {
     width: 50px;
   }
 }
-.icosvg-2{
-  svg{
+.icosvg-2 {
+  svg {
     width: 70px;
   }
 }
-.icosvg-3{
-  svg{
+.icosvg-3 {
+  svg {
     width: 86px;
   }
 }
+// end advantages
+// start autor
+.auhtor {
+  background-image: url(../images/auhtor-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    background: $green;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 260px;
+    color: #fff;
+    margin-right: 45px;
+    margin-left: 60px;
+    span {
+      font-weight: 700;
+    }
+  }
+  &__btn {
+    background: #fff;
+    font-size: 18px;
+    line-height: 38px;
+    padding: 17px 40px;
+  }
+}
+// end auhtor
 
+// start tutorials
+.tutorials {
+  padding: 60px 120px;
+  color: #263238;
+  @include f700;
+}
+.tutorials__title {
+  font-size: 36px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.tutorials__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.tutorials__item {
+  max-width: 370px;
+  width: 100%;
+  background-color: #f8f8f8;
+  &-images {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 270px;
+  }
+  &-text {
+    font-size: 24px;
+    text-align: center;
+    @include f700;
+    margin: 32px 0;
+  }
+}
+// end tutorials
+// start footer
+.footer {
+  background-color: #263238;
+}
+.footer__content {
+  padding: 220px 0 80px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__col {
+  max-width: 270px;
+  &-menu {
+    max-width: 220px;
+  }
+  &-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 30px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+  &-text {
+    margin-bottom: 30px;
+    color: #b7c3c8;
+  }
+  &-adress {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: "\f041";
+      font-family: "icomoon";
+      color: $green;
+      font-size: 18px;
+      position: absolute;
+      left: 0;
+    }
+  }
+  &-phone {
+    a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 25px;
+      padding-top: 22px;
+      position: relative;
+      &::before {
+        content: "\f095";
+        font-family: "icomoon";
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  .footer__col-list {
+    a {
+      margin-bottom: 13px;
+      color: #b7c3c8;
+      padding-left: 22px;
+      position: relative;
+      &::before {
+        content: "\f0e7";
+        font-family: "icomoon";
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  .footer__social-link {
+    margin-bottom: 35px;
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: 7px;
+      }
+    }
+    a {
+      width: 28px;
+      height: 28px;
+      background-image: url(../images/css_sprites.png);
+    }
+  }
+  .link-facebook {
+    background-position: -0 -0;
+  }
+  .link-twitter {
+    background-position: -28px -0;
+  }
+  .link-youtube {
+    background-position: -0 -28px;
+  }
+  .link-pinteres {
+    background-position: -28px -28px;
+  }
+  .link-linkedin {
+    background-position: -56px -0px;
+  }
+  .footer__copy {
+    border-top: 1px solid #919699;
+    text-align: center;
+    padding: 20px 0 30px;
+    &-text {
+      font-size: 15px;
+      color: #919699;
+    }
+  }
+}
+.footer__form-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.footer__form {
+  position: relative;
+  input {
+    height: 40px;
+    background-color: #2f3c43;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 13px;
+    padding-right: 50px;
+    border: 0;
+    &::placeholder {
+      color: #697378;
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $green;
+    height: 40px;
+    border: 0;
+    width: 43px;
+    cursor: pointer;
+    &::before {
+      content: "\f124";
+      position: absolute;
+      font-family: "icomoon";
+      font-size: 20px;
+      top: 11px;
+      left: 13px;
+      color: #fff;
+    }
+  }
+}

@@ -15,6 +15,7 @@ body {
   line-height: 24px;
   color: $color-text;
   font-family: "Roboto-Regular", sans-serif;
+  overflow-x: hidden;
 }
 a {
   display: inline-block;
@@ -27,17 +28,17 @@ li {
   padding: 0;
   list-style: none;
 }
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
+// .wrapper {
+  // display: flex;
+  // flex-direction: column;
+  // min-height: 100%;
+// }
 .content {
-  flex: 1 0 auto;
+	min-height: calc(100vh - 80px);
 }
-.footer {
-  flex: 0 0 auto;
-}
+// .footer {
+//   flex: 0 0 auto;
+// }
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -48,7 +49,7 @@ li {
   margin: 0 auto;
   padding: 0 30px;
 }
-.page-content{
+.page-content {
   background-color: $grey;
 }
 .title {
@@ -91,6 +92,19 @@ li {
     a {
       color: #b0bec5;
     }
+  }
+}
+.angle-right {
+  position: relative;
+  padding-left: 15px;
+  &::before {
+    content: "\f105";
+    font-family: "icomoon";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $green;
+    font-size: 14px;
   }
 }
 

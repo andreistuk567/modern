@@ -350,7 +350,7 @@
   text-align: center;
   width: 282px;
   background-color: #76ae36;
-  font-family: 'icomoon';
+  font-family: "icomoon";
   color: #fff;
   font-size: 18px;
   position: relative;
@@ -1603,5 +1603,63 @@ button.icon-unsorted {
 }
 
 // end product-one
+// start page-404
+.page-404__wrapper {
+  border: 1px solid #cdd4c4;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+.page-404__head {
+  color: #444;
+  border: 1px solid #cdd4c4;
+  padding: 23px 27px;
+  font-size: 24px;
+  @include f500;
+}
+.page-404__inner {
+  background-color: $green;
+  text-align: center;
+  color: #fff;
+}
+.page-404__404 {
+  font-size: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  line-height: 300px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content:'';
+    background-image: url(../images/men-404.png);
+    width: 150px;
+    height: 292px;
+    margin-left: 20px;
+  }
+}
+.page-404__title{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 30px;
+}
+.page-404__text{
+  font-size: 18px;
+  max-width: 501px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.page-404__link{
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 30px 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 100px;
+}
+// end page-404
 
 @import "media";
